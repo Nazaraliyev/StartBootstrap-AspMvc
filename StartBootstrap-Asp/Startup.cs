@@ -25,7 +25,7 @@ namespace StartBootstrap_Asp
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
-            services.AddDbContext<AppDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("StartBootstrapDb")));
+            services.AddDbContext<AppDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("StartBootstrap")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
