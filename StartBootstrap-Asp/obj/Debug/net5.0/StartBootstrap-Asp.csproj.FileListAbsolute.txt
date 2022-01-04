@@ -159,3 +159,4 @@ C:\Users\nazar\Desktop\StartBootstrap-Asp\StartBootstrap-Asp\obj\Debug\net5.0\Ra
 C:\Users\nazar\Desktop\StartBootstrap-Asp\StartBootstrap-Asp\obj\Debug\net5.0\Razor\Areas\Admin\Views\Portfolio\Create.cshtml.g.cs
 C:\Users\nazar\Desktop\StartBootstrap-Asp\StartBootstrap-Asp\obj\Debug\net5.0\Razor\Areas\Admin\Views\Portfolio\Update.cshtml.g.cs
 C:\Users\nazar\Desktop\StartBootstrap-Asp\StartBootstrap-Asp\obj\Debug\net5.0\Razor\Areas\Admin\Views\About\Update.cshtml.g.cs
+C:\Users\nazar\Desktop\StartBootstrap-Asp\StartBootstrap-Asp\obj\Debug\net5.0\Razor\Areas\Admin\Views\Banner\Update.cshtml.g.cs
