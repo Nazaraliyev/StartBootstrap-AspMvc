@@ -18,7 +18,7 @@ namespace StartBootstrap_Asp.Controllers
             VmHome model = new VmHome()
             {
                 sosialMedia = _context.sosialMedias.ToList(),
-                portfolios = _context.portfolios.ToList(),
+                portfolios = _context.portfolios.Take(6).ToList(),
                 settings = _context.settings.FirstOrDefault()
 
             };

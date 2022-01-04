@@ -1,6 +1,6 @@
 ﻿@model VmHome
 @{
-    Layout = null;
+	Layout = null;
 }
 
 <!DOCTYPE html>
@@ -30,7 +30,7 @@
 	<header>
 		<nav class="d-flex justify-content-between container">
 			<div id="logo">
-				<a class="text-uppercase">start bootstrap</a>
+				<a class="text-uppercase">@Model.settings.Logo</a>
 			</div>
 			<ul id="menu" class="d-flex justify-content-between">
 				<li class="text-uppercase">portfolio</li>
@@ -42,12 +42,12 @@
 	<main>
 		<section id="banner">
 			<div class="container d-flex flex-column align-items-center">
-				<img src="~/assets//Img/banner/avataaars.svg" alt="avatar" />
-				<h1>Start Bootstrap</h1>
+				<img src="~/assets//Img/banner/@Model.settings.BannerImg" alt="avatar" />
+				<h1>@Model.settings.BannerHeader</h1>
 				<div class="star">
 					<span> <i class="fas fa-star"></i></span>
 				</div>
-				<p>Graphic Artist - Web Designer - Illustrator</p>
+				<p>@Model.settings.BannerText</p>
 			</div>
 		</section>
 
@@ -61,54 +61,19 @@
 				</div>
 				<div id="portfolio-items-block">
 					<div class="row justify-content-between">
-						<div class="col-4">
-							<div class="portfolio-item">
-								<img src="~/assets//Img/portfolio/cabin.png" alt="portfolio-item" />
-								<div class="d-flex justify-content-center align-items-center">
-									<i class="fas fa-plus"></i>
+						@{
+							foreach (var item in Model.portfolios)
+							{
+								<div class="col-4">
+									<div class="portfolio-item">
+										<img src="~/assets//Img/portfolio/@item.ImgName" alt="portfolio-item" />
+										<div class="d-flex justify-content-center align-items-center">
+											<i class="fas fa-plus"></i>
+										</div>
+									</div>
 								</div>
-							</div>
-						</div>
-						<div class="col-4">
-							<div class="portfolio-item">
-								<img src="~/assets//Img/portfolio/cabin.png" alt="portfolio-item" />
-								<div class="d-flex justify-content-center align-items-center">
-									<i class="fas fa-plus"></i>
-								</div>
-							</div>
-						</div>
-						<div class="col-4">
-							<div class="portfolio-item">
-								<img src="~/assets//Img/portfolio/cabin.png" alt="portfolio-item" />
-								<div class="d-flex justify-content-center align-items-center">
-									<i class="fas fa-plus"></i>
-								</div>
-							</div>
-						</div>
-						<div class="col-4">
-							<div class="portfolio-item">
-								<img src="~/assets//Img/portfolio/cabin.png" alt="portfolio-item" />
-								<div class="d-flex justify-content-center align-items-center">
-									<i class="fas fa-plus"></i>
-								</div>
-							</div>
-						</div>
-						<div class="col-4">
-							<div class="portfolio-item">
-								<img src="~/assets//Img/portfolio/cabin.png" alt="portfolio-item" />
-								<div class="d-flex justify-content-center align-items-center">
-									<i class="fas fa-plus"></i>
-								</div>
-							</div>
-						</div>
-						<div class="col-4">
-							<div class="portfolio-item">
-								<img src="~/assets//Img/portfolio/cabin.png" alt="portfolio-item" />
-								<div class="d-flex justify-content-center align-items-center">
-									<i class="fas fa-plus"></i>
-								</div>
-							</div>
-						</div>
+							}
+						}
 					</div>
 				</div>
 			</div>
@@ -124,12 +89,7 @@
 				</div>
 				<div class="row justify-content-center">
 					<div class="col-4">
-						<p class="about-text">
-							Freelancer is a free bootstrap theme created by Start Bootstrap.
-							The download includes the complete source files including HTML,
-							CSS, and JavaScript as well as optional SASS stylesheets for
-							easy customization.
-						</p>
+						<p class="about-text">@Model.settings.AboutText</p>
 					</div>
 					<div class="col-4">
 						<p class="about-text">
@@ -198,40 +158,28 @@
 				<div class="col-4">
 					<h3>LOCATION</h3>
 					<p>
-						2215 John Daniel Drive <br />
-						Clark, MO 65243
+						@Model.settings.Location <br />Clark, MO 65243
 					</p>
 				</div>
 				<div class="col-4">
 					<h3>AROUND THE WEB</h3>
 					<ul class="d-flex justify-content-center">
-						<li class="d-flex justify-content-center align-items-center">
-							<a href="#" class="btn btn-outline-light">
-								<i class="fab fa-facebook-f"></i>
-							</a>
-						</li>
-						<li>
-							<a href="#" class="btn btn-outline-light">
-								<i class="fab fa-twitter"></i>
-							</a>
-						</li>
-						<li>
-							<a href="#" class="btn btn-outline-light">
-								<i class="fab fa-linkedin-in"></i>
-							</a>
-						</li>
-						<li>
-							<a href="#" class="btn btn-outline-light">
-								<i class="fab fa-dribbble"></i>
-							</a>
-						</li>
+						@{
+							foreach (var item in @Model.sosialMedia)
+							{
+								<li class="d-flex justify-content-center align-items-center">
+									<a href="#" class="btn btn-outline-light">
+										<i class="@item.Icon"></i>
+									</a>
+								</li>
+							}
+						}
 					</ul>
 				</div>
 				<div class="col-4">
 					<h3>ABOUT FREELANCER</h3>
 					<p>
-						Freelance is a free to use, MIT licensed Bootstrap theme created
-						by <a href="#">Start Bootstrap</a> .
+						@Model.settings.FreelancerAbout <a href="#">Start Bootstrap</a> .
 					</p>
 				</div>
 			</div>
