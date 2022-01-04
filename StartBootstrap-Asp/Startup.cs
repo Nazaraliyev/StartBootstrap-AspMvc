@@ -47,6 +47,11 @@ namespace StartBootstrap_Asp
 
             app.UseEndpoints(endpoints =>
             {
+                endpoints.MapAreaControllerRoute(
+                    name: "areas",
+                    areaName : "admin",
+                    pattern: "admin/{controller=Login}/{action=Login}/{id?}"
+            );
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");

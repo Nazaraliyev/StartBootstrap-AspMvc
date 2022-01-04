@@ -142,3 +142,10 @@ C:\Users\nazar\Desktop\StartBootstrap-Asp\StartBootstrap-Asp\bin\Debug\net5.0\ru
 C:\Users\nazar\Desktop\StartBootstrap-Asp\StartBootstrap-Asp\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
 C:\Users\nazar\Desktop\StartBootstrap-Asp\StartBootstrap-Asp\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 C:\Users\nazar\Desktop\StartBootstrap-Asp\StartBootstrap-Asp\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\nazar\Desktop\StartBootstrap-Asp\StartBootstrap-Asp\obj\Debug\net5.0\Razor\Areas\Admin\Views\Shared\Error.cshtml.g.cs
+C:\Users\nazar\Desktop\StartBootstrap-Asp\StartBootstrap-Asp\obj\Debug\net5.0\Razor\Areas\Admin\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\nazar\Desktop\StartBootstrap-Asp\StartBootstrap-Asp\obj\Debug\net5.0\Razor\Areas\Admin\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\nazar\Desktop\StartBootstrap-Asp\StartBootstrap-Asp\obj\Debug\net5.0\Razor\Areas\Admin\Views\_ViewImports.cshtml.g.cs
+C:\Users\nazar\Desktop\StartBootstrap-Asp\StartBootstrap-Asp\obj\Debug\net5.0\Razor\Areas\Admin\Views\_ViewStart.cshtml.g.cs
+C:\Users\nazar\Desktop\StartBootstrap-Asp\StartBootstrap-Asp\obj\Debug\net5.0\Razor\Areas\Admin\Views\Login\Login.cshtml.g.cs
+C:\Users\nazar\Desktop\StartBootstrap-Asp\StartBootstrap-Asp\obj\Debug\net5.0\Razor\Areas\Admin\Views\Home\Index.cshtml.g.cs
