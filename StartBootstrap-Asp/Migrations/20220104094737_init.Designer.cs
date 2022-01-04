@@ -9,7 +9,7 @@ using StartBootstrap_Asp.Data;
 namespace StartBootstrap_Asp.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20220104093222_init")]
+    [Migration("20220104094737_init")]
     partial class init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
