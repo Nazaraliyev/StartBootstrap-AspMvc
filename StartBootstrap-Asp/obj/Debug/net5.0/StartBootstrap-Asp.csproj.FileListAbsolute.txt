@@ -162,3 +162,4 @@ C:\Users\nazar\Desktop\StartBootstrap-Asp\StartBootstrap-Asp\obj\Debug\net5.0\Ra
 C:\Users\nazar\Desktop\StartBootstrap-Asp\StartBootstrap-Asp\obj\Debug\net5.0\Razor\Areas\Admin\Views\Banner\Update.cshtml.g.cs
 C:\Users\nazar\Desktop\StartBootstrap-Asp\StartBootstrap-Asp\obj\Debug\net5.0\Razor\Areas\Admin\Views\Settings\SmUpdate.cshtml.g.cs
 C:\Users\nazar\Desktop\StartBootstrap-Asp\StartBootstrap-Asp\obj\Debug\net5.0\Razor\Areas\Admin\Views\Settings\SmCreate.cshtml.g.cs
+C:\Users\nazar\Desktop\StartBootstrap-Asp\StartBootstrap-Asp\obj\Debug\net5.0\Razor\Areas\Admin\Views\Settings\Update.cshtml.g.cs

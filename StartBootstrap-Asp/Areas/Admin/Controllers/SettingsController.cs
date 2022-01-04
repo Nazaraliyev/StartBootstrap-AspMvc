@@ -25,6 +25,30 @@ namespace StartBootstrap_Asp.Areas.Admin.Controllers
             return View(model);
         }
 
+        public IActionResult Update()
+        {
+            return View(_context.settings.FirstOrDefault());
+        }
+
+
+        [HttpPost]
+        public IActionResult Update(Settings model)
+        {
+            if (model.Location != null && model.Logo != null && model.FreelancerAbout != null)
+            {
+                Settings settings = _context.settings.FirstOrDefault();
+                settings.Logo = model.Logo;
+                settings.Location = model.Location;
+                settings.FreelancerAbout = model.FreelancerAbout;
+                _context.SaveChanges();
+                return RedirectToAction("index");
+            }
+            else
+            {
+                ModelState.AddModelError("", "All Boxes is Required");
+                return View(model);
+            }
+        }
 
 
 
