@@ -149,3 +149,11 @@ C:\Users\nazar\Desktop\StartBootstrap-Asp\StartBootstrap-Asp\obj\Debug\net5.0\Ra
 C:\Users\nazar\Desktop\StartBootstrap-Asp\StartBootstrap-Asp\obj\Debug\net5.0\Razor\Areas\Admin\Views\_ViewStart.cshtml.g.cs
 C:\Users\nazar\Desktop\StartBootstrap-Asp\StartBootstrap-Asp\obj\Debug\net5.0\Razor\Areas\Admin\Views\Login\Login.cshtml.g.cs
 C:\Users\nazar\Desktop\StartBootstrap-Asp\StartBootstrap-Asp\obj\Debug\net5.0\Razor\Areas\Admin\Views\Home\Index.cshtml.g.cs
+C:\Users\nazar\Desktop\StartBootstrap-Asp\StartBootstrap-Asp\obj\Debug\net5.0\Razor\Areas\Admin\Views\About\Index.cshtml.g.cs
+C:\Users\nazar\Desktop\StartBootstrap-Asp\StartBootstrap-Asp\obj\Debug\net5.0\Razor\Areas\Admin\Views\Footer\Index.cshtml.g.cs
+C:\Users\nazar\Desktop\StartBootstrap-Asp\StartBootstrap-Asp\obj\Debug\net5.0\Razor\Areas\Admin\Views\User\Index.cshtml.g.cs
+C:\Users\nazar\Desktop\StartBootstrap-Asp\StartBootstrap-Asp\obj\Debug\net5.0\Razor\Areas\Admin\Views\Messages\Index.cshtml.g.cs
+C:\Users\nazar\Desktop\StartBootstrap-Asp\StartBootstrap-Asp\obj\Debug\net5.0\Razor\Areas\Admin\Views\Portfolio\Index.cshtml.g.cs
+C:\Users\nazar\Desktop\StartBootstrap-Asp\StartBootstrap-Asp\obj\Debug\net5.0\Razor\Areas\Admin\Views\Settings\Index.cshtml.g.cs
+C:\Users\nazar\Desktop\StartBootstrap-Asp\StartBootstrap-Asp\obj\Debug\net5.0\Razor\Areas\Admin\Views\Banner\Index.cshtml.g.cs
+C:\Users\nazar\Desktop\StartBootstrap-Asp\StartBootstrap-Asp\obj\Debug\net5.0\Razor\Areas\Admin\Views\Portfolio\Create.cshtml.g.cs

@@ -1,4 +1,6 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Microsoft.AspNetCore.Http;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace StartBootstrap_Asp.Models
 {
@@ -11,9 +13,12 @@ namespace StartBootstrap_Asp.Models
 		[MaxLength(100)]
 		public string ImgName { get; set; }
 
+		[NotMapped]
+        public IFormFile ImgFile { get; set; }
 
 
-		[MaxLength(500)]
+
+        [MaxLength(500)]
 		public string ImgDescription { get; set; }
 
 	}
