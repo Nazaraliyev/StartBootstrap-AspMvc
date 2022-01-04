@@ -34,11 +34,11 @@ namespace StartBootstrap_Asp.Areas.Admin.Controllers
         [HttpPost]
         public IActionResult Create(Portfolio model)
         {
-            if (ModelState.IsValid)
+            if (model.ImgFile != null)
             {
-                if((model.ImgFile.ContentType == "image/jpeg" || model.ImgFile.ContentType == "image/png"))
+                if ((model.ImgFile.ContentType == "image/jpeg" || model.ImgFile.ContentType == "image/png"))
                 {
-                    if(model.ImgFile.Length <= 3145728)
+                    if (model.ImgFile.Length <= 3145728)
                     {
                         string fileName = Guid.NewGuid() + "-" + model.ImgFile.FileName;
                         string filePath = Path.Combine(_webHostEnvironment.WebRootPath, "assets/Img/portfolio", fileName);
@@ -54,7 +54,7 @@ namespace StartBootstrap_Asp.Areas.Admin.Controllers
                     else
                     {
                         ModelState.AddModelError("", "File Size is over 3mb");
-                        return View(model);  
+                        return View(model);
                     }
                 }
                 else
@@ -62,6 +62,74 @@ namespace StartBootstrap_Asp.Areas.Admin.Controllers
                     ModelState.AddModelError("", "This is not Image File");
                     return View(model);
                 }
+            }
+            else
+            {
+                ModelState.AddModelError("", "Image is requared");
+                return View(model);
+            }
+        }
+
+
+        public IActionResult Update(int Id)
+        {
+            return View(_context.portfolios.First(p => p.Id == Id));
+        }
+
+
+
+
+        [HttpPost]
+        public IActionResult Update(Portfolio model)
+        {
+            Portfolio oldPortfolio = _context.portfolios.FirstOrDefault(p => p.Id == model.Id);
+            if (ModelState.IsValid)
+            {
+                if (model.ImgFile != null)
+                {
+                    if ((model.ImgFile.ContentType == "image/jpeg" || model.ImgFile.ContentType == "image/png"))
+                    {
+                        if (model.ImgFile.Length <= 3145728)
+                        {
+                            string oldImg = Path.Combine(_webHostEnvironment.WebRootPath, "assets/Img/portfolio", oldPortfolio.ImgName);
+                            if (System.IO.File.Exists(oldImg))
+                            {
+                                System.IO.File.Delete(oldImg);
+                            }
+
+                            string fileName = Guid.NewGuid() + "-" + model.ImgFile.FileName;
+                            string filePath = Path.Combine(_webHostEnvironment.WebRootPath, "assets/Img/portfolio", fileName);
+                            using (var stream = new FileStream(filePath, FileMode.Create))
+                            {
+                                model.ImgFile.CopyTo(stream);
+                            }
+
+
+                            model.ImgName = fileName;
+                        }
+                        else
+                        {
+                            ModelState.AddModelError("", "File Size is over 3mb");
+                            return View(model);
+                        }
+                    }
+                    else
+                    {
+                        ModelState.AddModelError("", "This is not Image File");
+                        return View(model);
+                    }
+                }
+                else
+                {
+                    model.ImgName = oldPortfolio.ImgName;
+                }
+
+                //oldPortfolio.ImgDescription = model.ImgDescription;
+                Portfolio updated = _context.portfolios.FirstOrDefault(p => p.Id == model.Id);
+                updated.ImgName = model.ImgName;
+                updated.ImgDescription = model.ImgDescription;
+                _context.SaveChanges();
+                return RedirectToAction("Index");
             }
             return View(model);
         }
