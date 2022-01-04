@@ -6,7 +6,7 @@ namespace StartBootstrap_Asp.Models
     public class Settings
     {
         [Key]
-        private int id { get; set; }
+        public int Id { get; set; }
 
 
 
