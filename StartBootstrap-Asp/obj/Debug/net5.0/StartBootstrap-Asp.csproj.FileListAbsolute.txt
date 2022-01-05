@@ -163,3 +163,8 @@ C:\Users\nazar\Desktop\StartBootstrap-Asp\StartBootstrap-Asp\obj\Debug\net5.0\Ra
 C:\Users\nazar\Desktop\StartBootstrap-Asp\StartBootstrap-Asp\obj\Debug\net5.0\Razor\Areas\Admin\Views\Settings\SmUpdate.cshtml.g.cs
 C:\Users\nazar\Desktop\StartBootstrap-Asp\StartBootstrap-Asp\obj\Debug\net5.0\Razor\Areas\Admin\Views\Settings\SmCreate.cshtml.g.cs
 C:\Users\nazar\Desktop\StartBootstrap-Asp\StartBootstrap-Asp\obj\Debug\net5.0\Razor\Areas\Admin\Views\Settings\Update.cshtml.g.cs
+C:\Users\nazar\Desktop\StartBootstrap-Asp\StartBootstrap-Asp\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\nazar\Desktop\StartBootstrap-Asp\StartBootstrap-Asp\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\nazar\Desktop\StartBootstrap-Asp\StartBootstrap-Asp\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\nazar\Desktop\StartBootstrap-Asp\StartBootstrap-Asp\bin\Debug\net5.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\nazar\Desktop\StartBootstrap-Asp\StartBootstrap-Asp\bin\Debug\net5.0\Microsoft.Extensions.Identity.Stores.dll

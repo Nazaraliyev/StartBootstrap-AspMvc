@@ -1,9 +1,10 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using StartBootstrap_Asp.Models;
 
 namespace StartBootstrap_Asp.Data
 {
-	public class AppDbContext:DbContext
+	public class AppDbContext:IdentityDbContext
 	{
 		public AppDbContext(DbContextOptions options) : base(options){ }
 
@@ -12,5 +13,6 @@ namespace StartBootstrap_Asp.Data
 		public DbSet<SosialMedia> sosialMedias { get; set; }
 		public DbSet<ContactMessage> contactMessages { get; set; }
 		public DbSet<Portfolio> portfolios { get; set; }
+		public DbSet<CostumeUset> costumeUsets { get; set; }
 	}
 }
