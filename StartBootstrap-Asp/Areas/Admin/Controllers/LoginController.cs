@@ -8,7 +8,8 @@ using System.Threading.Tasks;
 namespace StartBootstrap_Asp.Areas.Admin.Controllers
 {
 	[Area("admin")]
-	public class LoginController : Controller
+    [Authorize]
+    public class LoginController : Controller
 	{
         private readonly AppDbContext _context;
         private readonly SignInManager<IdentityUser> _signInManager;
@@ -18,14 +19,16 @@ namespace StartBootstrap_Asp.Areas.Admin.Controllers
             _context = context;
             _signInManager = signInManager;
         }
-		public IActionResult Login()
+        [AllowAnonymous]
+        public IActionResult Login()
 		{
 			return View();
 		}
 
 
 		[HttpPost]
-		public async Task<IActionResult> Login(CostumeUser model)
+        [AllowAnonymous]
+        public async Task<IActionResult> Login(CostumeUser model)
         {
 			if (model.UserName != null && model.PasswordHash != null)
             {

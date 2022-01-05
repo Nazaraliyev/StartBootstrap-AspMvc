@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using StartBootstrap_Asp.Data;
 using StartBootstrap_Asp.Models;
 using System.Linq;
@@ -6,6 +7,7 @@ using System.Linq;
 namespace StartBootstrap_Asp.Areas.Admin.Controllers
 {
     [Area("admin")]
+    [Authorize]
     public class AboutController : Controller
     {
         private readonly AppDbContext _context;

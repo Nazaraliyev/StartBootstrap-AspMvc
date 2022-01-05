@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Hosting;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
 using StartBootstrap_Asp.Data;
@@ -10,6 +11,7 @@ using System.Linq;
 namespace StartBootstrap_Asp.Areas.Admin.Controllers
 {
     [Area("admin")]
+    [Authorize]
     public class PortfolioController : Controller
     {
         private readonly AppDbContext _context;

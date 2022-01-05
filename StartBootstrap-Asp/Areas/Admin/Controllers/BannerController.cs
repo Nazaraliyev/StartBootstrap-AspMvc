@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Hosting;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using StartBootstrap_Asp.Data;
 using StartBootstrap_Asp.Models;
@@ -9,6 +10,7 @@ using System.Linq;
 namespace StartBootstrap_Asp.Areas.Admin.Controllers
 {
     [Area("admin")]
+    [Authorize]
     public class BannerController : Controller
     {
         private readonly AppDbContext _context;

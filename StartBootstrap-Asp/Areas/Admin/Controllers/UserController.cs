@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using StartBootstrap_Asp.Data;
 using StartBootstrap_Asp.Models;
@@ -8,6 +9,7 @@ using System.Threading.Tasks;
 namespace StartBootstrap_Asp.Areas.Admin.Controllers
 {
     [Area("admin")]
+    [Authorize]
     public class UserController : Controller
     {
         private readonly AppDbContext _context;
