@@ -8,5 +8,6 @@ namespace StartBootstrap_Asp.ViewModel
 		public Settings settings { get; set; }
 		public List<SosialMedia> sosialMedia { get; set; }
 		public List<Portfolio> portfolios { get; set; }
+		public ContactMessage contactMessage { get; set; }
 	}
 }
