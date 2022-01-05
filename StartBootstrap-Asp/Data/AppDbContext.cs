@@ -13,6 +13,6 @@ namespace StartBootstrap_Asp.Data
 		public DbSet<SosialMedia> sosialMedias { get; set; }
 		public DbSet<ContactMessage> contactMessages { get; set; }
 		public DbSet<Portfolio> portfolios { get; set; }
-		public DbSet<CostumeUset> costumeUsets { get; set; }
+		public DbSet<CostumeUser> costumeUsers { get; set; }
 	}
 }

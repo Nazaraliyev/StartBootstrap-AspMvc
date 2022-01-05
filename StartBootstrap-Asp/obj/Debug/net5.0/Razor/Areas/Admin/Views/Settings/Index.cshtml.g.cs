@@ -33,8 +33,15 @@ using StartBootstrap_Asp.ViewModel;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 4 "C:\Users\nazar\Desktop\StartBootstrap-Asp\StartBootstrap-Asp\Areas\Admin\Views\_ViewImports.cshtml"
+using Microsoft.AspNetCore.Identity;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"ec3810964f7151cd10f465bbf6745a8bc13cfbd7", @"/Areas/Admin/Views/Settings/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"5c274e956b30a76cfef86a9b1f17010882f20dcb", @"/Areas/Admin/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"c2d06c63611b4e49ae9260c5bb0142e7c31d73de", @"/Areas/Admin/Views/_ViewImports.cshtml")]
     public class Areas_Admin_Views_Settings_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<VmSettings>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("class", new global::Microsoft.AspNetCore.Html.HtmlString("btn btn-primary"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -120,7 +127,7 @@ using StartBootstrap_Asp.ViewModel;
 #line hidden
 #nullable disable
             WriteLiteral("</td>\r\n\t\t\t\t<td>\r\n\t\t\t\t\t");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ec3810964f7151cd10f465bbf6745a8bc13cfbd77816", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ec3810964f7151cd10f465bbf6745a8bc13cfbd78033", async() => {
                 WriteLiteral("Update");
             }
             );
@@ -204,7 +211,7 @@ WriteAttributeValue("", 1154, item.Icon, 1154, 10, false);
 #line hidden
 #nullable disable
             WriteLiteral("</td>\r\n\t\t\t\t\t\t<td>\r\n\t\t\t\t\t\t\t");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ec3810964f7151cd10f465bbf6745a8bc13cfbd711419", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ec3810964f7151cd10f465bbf6745a8bc13cfbd711636", async() => {
                 WriteLiteral("Update");
             }
             );
@@ -240,7 +247,7 @@ WriteAttributeValue("", 1154, item.Icon, 1154, 10, false);
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n\t\t\t\t\t\t\t");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ec3810964f7151cd10f465bbf6745a8bc13cfbd714176", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ec3810964f7151cd10f465bbf6745a8bc13cfbd714393", async() => {
                 WriteLiteral("Delete");
             }
             );
@@ -286,7 +293,7 @@ WriteAttributeValue("", 1154, item.Icon, 1154, 10, false);
 #line hidden
 #nullable disable
             WriteLiteral("\t\t</tbody>\r\n\t</table>\r\n\t");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ec3810964f7151cd10f465bbf6745a8bc13cfbd717226", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ec3810964f7151cd10f465bbf6745a8bc13cfbd717443", async() => {
                 WriteLiteral("Create New");
             }
             );

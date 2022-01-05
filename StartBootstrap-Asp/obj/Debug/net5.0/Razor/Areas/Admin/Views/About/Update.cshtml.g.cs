@@ -33,8 +33,15 @@ using StartBootstrap_Asp.ViewModel;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 4 "C:\Users\nazar\Desktop\StartBootstrap-Asp\StartBootstrap-Asp\Areas\Admin\Views\_ViewImports.cshtml"
+using Microsoft.AspNetCore.Identity;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"6c14eff94347f45ff5eb9f260cd2443b3c77699d", @"/Areas/Admin/Views/About/Update.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"5c274e956b30a76cfef86a9b1f17010882f20dcb", @"/Areas/Admin/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"c2d06c63611b4e49ae9260c5bb0142e7c31d73de", @"/Areas/Admin/Views/_ViewImports.cshtml")]
     public class Areas_Admin_Views_About_Update : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<Settings>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("class", new global::Microsoft.AspNetCore.Html.HtmlString("form-control"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -81,9 +88,9 @@ using StartBootstrap_Asp.ViewModel;
 #nullable disable
             WriteLiteral("\r\n");
             WriteLiteral("\r\n<div class=\"container-fluid\">\r\n\t");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6c14eff94347f45ff5eb9f260cd2443b3c77699d6395", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6c14eff94347f45ff5eb9f260cd2443b3c77699d6612", async() => {
                 WriteLiteral("\r\n\t\t<div class=\"form-floating mb-3\">\r\n\t\t\t");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("textarea", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6c14eff94347f45ff5eb9f260cd2443b3c77699d6701", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("textarea", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6c14eff94347f45ff5eb9f260cd2443b3c77699d6918", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_TagHelpers_TextAreaTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.TextAreaTagHelper>();
@@ -106,7 +113,7 @@ __Microsoft_AspNetCore_Mvc_TagHelpers_TextAreaTagHelper.For = ModelExpressionPro
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n\t\t\t");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("label", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6c14eff94347f45ff5eb9f260cd2443b3c77699d8410", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("label", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6c14eff94347f45ff5eb9f260cd2443b3c77699d8627", async() => {
                     WriteLiteral("About");
                 }
                 );

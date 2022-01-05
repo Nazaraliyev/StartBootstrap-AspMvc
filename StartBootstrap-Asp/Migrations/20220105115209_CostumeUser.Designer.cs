@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using StartBootstrap_Asp.Data;
 
 namespace StartBootstrap_Asp.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20220105115209_CostumeUser")]
+    partial class CostumeUser
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -336,9 +338,6 @@ namespace StartBootstrap_Asp.Migrations
                 {
                     b.HasBaseType("Microsoft.AspNetCore.Identity.IdentityUser");
 
-                    b.Property<DateTime>("CreatedTime")
-                        .HasColumnType("datetime2");
-
                     b.Property<string>("FullName")
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
@@ -352,10 +351,6 @@ namespace StartBootstrap_Asp.Migrations
                         .IsRequired()
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
-
-                    b.Property<string>("RePassword")
-                        .HasMaxLength(200)
-                        .HasColumnType("nvarchar(200)");
 
                     b.HasDiscriminator().HasValue("CostumeUser");
                 });
